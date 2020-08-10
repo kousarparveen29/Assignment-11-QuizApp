@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bodyDiv">
+        <h1>Quiz App</h1>
+        <div class="quesMainDiv">
+            <div id="startDiv">
+                <button class="btnStart" onclick="startTest(this)">Start Test</button>
+            </div>
+            <div class="quesDiv">
+                <p id="quesPara"></p>
+            </div>
+            <div class="ansDiv">
+                <ul id="ansList">
+                </ul>
+            </div>
+            <div class="btnDiv" id="btnDiv">
+                <button class="btnNext" onclick="nextQues()" id="btnNext">Next</button>
+                <button class="btnResult" onclick="showResult()" id="btnResult">Show Result</button>
+            </div>
+            <div class="tab" id="tabe">
+                <h3 id="tabHeading">Result</h3>
+                <div>
+                    <p>Total Question:</p>
+                    <p id="totalQues"></p>
+                </div>
+                <div>
+                    <p>Correct:</p>
+                    <p id="correctAns"></p>
+                </div>
+                <div>
+                    <p>Wrong:</p>
+                    <p id="wrongAns"></p>
+                </div>
+                <div>
+                    <p>Percentage:</p>
+                    <p id="percent"></p>
+                </div>
+            </div>
+            <div id="circle">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

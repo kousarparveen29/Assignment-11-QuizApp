@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: radial-gradient(#d4d4aa, #c3c388, #b2b266);
+    background-size: cover;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 4.2vw;
+    margin: 10px 10px 20px 10px;
+    color: #00b3b3;
+    text-shadow: 2px 0px 3px #003333, -2px 0px 3px #003333, 0px 2px 3px #003333, 0px -2px 3px #003333;
+    word-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
+}
+
+.quesMainDiv{
+    width: 50vw;
+    margin: 0 auto;
+    border: 2px solid #012925;
+    background-color: #03625a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#startDiv{
+    margin: 80px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnStart{
+    width: 15vw;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #331e01;
+    font-size: 1.6vw;
+    background-color: #b66803;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1vw;
+}
+
+.quesDiv{
+    margin: 10px;
+    font-size: 1.6vw;
+    color: white;
+}
+
+.ansDiv{
+    margin: 20px;
+    font-size: 1.3vw;
+}
+
+li{
+    list-style: none;
+    background-color: #e6ffff;
+    border: 2px solid #442e11;
+    margin: 8px 0px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#ansList{
+    display: none;
+}
+
+.list::before{
+    content: "✔";
+    display: inline-block;
+    font-size: 0.9vw;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.chekLi::before{
+    background-color: rgb(144, 7, 179);
+}
+
+.btnDiv{
+    text-align: center;
+    visibility: hidden;
+}
+
+.btnPre, .btnNext, .btnResult{
+    padding: 10px;
+    width: 10vw;
+    border-radius: 30px;
+    border: 2px solid #331e01;
+    font-size: 1.2vw;
+    background-color: #b66803;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1vw;
+}
+
+.btnResult{
+    display: none;
+}
+
+.tab{
+    width: 50vw;
+    font-size: 1.9vw;
+    display: none;
+}
+
+#tabHeading{
+    font-size: 3vw !important;
+    letter-spacing: 0.2vw;
+    color: #640064;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 4vw;
+    margin-bottom: 30px;
+    background-color: #e6ffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tab div{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid cornsilk;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.tab p{
+    width: 20vw;
+    height: 3vw;
+    display: inline-block;
+    color: #dad61d;
+    letter-spacing: 0.1vw;
+}
+
+#totalQues, #correctAns, #wrongAns, #percent{
+    color: white;
+}
+
+#circle{
+    text-align: center;
+    display: none;
+}
+
+#circle div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.7vw;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
